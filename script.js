@@ -206,13 +206,12 @@ class FlappyBird {
     this.RESTART_BUTTON.style.display = "block";
     this.RESTART_MESSAGE.style.display = "block";
     this.RESTART_BUTTON.addEventListener("click", () => {
-      // this.removePreviousPipes();
-      // this.restartGame();
-      // this.GAME_STATE = "Play";
-      // this.RESTART_MESSAGE.innerHTML = "";
-      // this.RESTART_BUTTON.style.display = "none";
-      // this.init();
-      window.location.reload();
+      this.removePreviousPipes();
+      this.restartGame();
+      this.GAME_STATE = "Play";
+      this.RESTART_MESSAGE.innerHTML = "";
+      this.RESTART_BUTTON.style.display = "none";
+      this.init();
     });
   }
 
