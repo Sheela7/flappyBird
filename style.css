@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.background {
+  background: url(./images/background.png) repeat-x;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.bird {
+  /* height: 85px;
+  width: 100px; */
+  height: 85px;
+  width: 100px;
+  position: fixed;
+  top: 40vh;
+  left: 30vw;
+  z-index: 2;
+}
+.pipes {
+  border: 1px solid white;
+  position: absolute;
+  width: 100px;
+  background-image: url("images/pipe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.score {
+  position: fixed;
+  z-index: 2;
+  height: 10vh;
+  font-size: 5vh;
+  font-weight: 100;
+  color: blue;
+  top: 0;
+  left: 0;
+}
+.high-score {
+  position: fixed;
+  z-index: 2;
+  height: 10vh;
+  font-size: 5vh;
+  font-weight: 100;
+  color: blue;
+  top: 5vh;
+  left: 0;
+}
+
+#startButton {
+  position: fixed;
+  top: 28vh;
+  left: 38vw;
+  z-index: 2;
+  font-size: 3vh;
+  font-weight: 60;
+  color: black;
+  background-color: forestgreen;
+  text-align: center;
+  cursor: pointer;
+  height: 6vh;
+  width: 8vw;
+  font-size: 4vh;
+  border-radius: 20px;
+  padding: auto;
+}
+
+.start-message {
+  position: fixed;
+  z-index: 2;
+  height: 6vh;
+  font-size: 6vh;
+  font-weight: 100;
+  color: black;
+  top: 15vh;
+  left: 20vw;
+  text-align: center;
+}
+
+#restartButton {
+  position: fixed;
+  top: 28vh;
+  left: 38vw;
+  z-index: 2;
+  font-size: 3vh;
+  font-weight: 60;
+  color: black;
+  background-color: peachpuff;
+  text-align: center;
+  cursor: pointer;
+  height: 6vh;
+  width: 8vw;
+  font-size: 4vh;
+  border-radius: 20px;
+  padding: auto;
+  display: none;
+}
+.restart-message {
+  position: fixed;
+  z-index: 2;
+  height: 6vh;
+  font-size: 6vh;
+  font-weight: 100;
+  color: black;
+  top: 15vh;
+  left: 20vw;
+  text-align: center;
+  display: none;
+}
